@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise Message</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffe6e6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #message {
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: #ffcccc;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            display: none;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #ff6b6b;
+        }
+
+        #revealButton {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1em;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #revealButton:hover {
+            background-color: #ff4040;
+        }
+    </style>
+</head>
+<body>
+    <div id="message">
+        <h1>Hey Elen, my future wife!,</h1>
+        <p>Sirum em qez amenashaty u uzum ei hishecnel vor misht erjanik enq linelu</p>
+        <img src="https://i.postimg.cc/q7QkDt0w/IMG-6632.jpg" alt="Cute image" width="300" height="400" style="border-radius: 15px;">
+    </div>
+
+    <button id="revealButton">Tap to Reveal Your Surprise</button>
+
+    <script>
+        document.getElementById('revealButton').addEventListener('click', function() {
+            document.getElementById('message').style.display = 'block';
+            this.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
